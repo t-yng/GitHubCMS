@@ -1,0 +1,25 @@
+@startuml ユースケース
+
+left to right direction
+actor "ユーザー" as user
+
+rectangle SimpleCMS {
+    package 記事の管理 {
+        user --> (記事を書く)
+        user --> (記事を下書き保存する)
+        user --> (記事を公開する)
+        user --> (記事の公開を停止する)
+        user --> (記事を更新する)
+        user --> (記事を削除する)
+        user --> (記事に埋め込む画像をアップロードする)
+    }
+    package タグの管理 {
+        user --> (新しくタグを登録する)
+        user --> (タグを削除する)
+        user --> (タグを更新する)
+    }
+    package 認証 {
+        user --> (GitHubアカウントでログインする)
+    }
+}
+@enduml
