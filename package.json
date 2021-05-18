@@ -1,0 +1,11 @@
+{
+  "name": "githubcms",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/t-yng/GitHubCMS.git",
+  "author": "t-yng <t.yng.greenmonkey@gmail.com>",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ]
+}
